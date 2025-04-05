@@ -205,16 +205,16 @@
 						{
 							"role": "hero",
 							"equipment": {},
-							"anchor": { "x": 0.74, "y": 0.17 },
-							"size": 0.7219646,
+							"anchor": { "x": 0.795, "y": 0.284 },
+							"size": 0.6,
 							"nameTag": "none"
 						},
 						{
 							"role": "hero2",
-							"form": "frame-talk",
+							"form": "frame-happy",
 							"equipment": {},
 							"anchor": { "x": 0.273, "y": 0.343 },
-							"size": 0.6875991,
+							"size": 0.6,
 							"nameTag": "none",
 							"head": { "rotate": 0 }
 						}
@@ -224,17 +224,17 @@
 							"textSourceFile": "guiding_star_theTradingPost",
 							"textKey": "~01~prompt~panel_004~1_hero2",
 							"pointerOwner": "hero2",
-							"padXFraction": 0.096,
-							"padYFraction": 0.118,
-							"shrinkToFitText": true
+							"padYFraction": 0.195,
+							"shrinkToFitText": true,
+							"pointerAdjust": { "dX": -21.678162, "dY": 0.9425291 }
 						},
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
 							"textKey": "~01~prompt~panel_004~2_hero",
 							"pointerOwner": "hero",
 							"location": "topRight",
-							"padXFraction": 0.028,
-							"padYFraction": 0.429,
+							"padXFraction": 0.023,
+							"padYFraction": 0.352,
 							"widthFraction": 0.48238805,
 							"shrinkToFitText": true
 						}
@@ -286,15 +286,73 @@
 							"padYFraction": 0.41,
 							"widthFraction": 0.5898507,
 							"shrinkToFitText": true
-						},
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"showNameTags": false,
+					"bgAuto": "atSite",
+					"bgNighttime": true,
+					"actorSlots": [
+						{
+							"role": "npc3",
+							"facing": "left",
+							"equipment": { "mode": "removeWeapons" },
+							"focus": "foot",
+							"anchor": { "x": 0.594, "y": -0.764 },
+							"size": 0.6576,
+							"head": { "rotate": 35.548 }
+						}
+					],
+					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_005~3_hero",
+							"textKey": "~01~prompt~panel_006~1_darken",
+							"style": "darken",
+							"padXFraction": 0.061,
+							"padYFraction": 0.152,
+							"widthFraction": 0.8009263
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": { "size": "twoThirds" }
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"bg": "comicBG_interiorHearth.jpg",
+					"actorSlots": [
+						{
+							"role": "hero",
+							"equipment": {},
+							"anchor": { "x": 0.26736438, "y": 0.5 },
+							"size": 0.7269863
+						},
+						{
+							"role": "hero2",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.7326356, "y": 0.5 },
+							"size": 0.7269863,
+							"nameTag": "bottomRight"
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_008~1_hero",
 							"pointerOwner": "hero",
-							"location": "bottomLeft",
-							"padYFraction": 0.134,
-							"shrinkToFitText": true,
-							"pointerAdjust": { "dX": -35.816093, "dY": -7.5402308, "pointerOrientH": "onRight" }
+							"padXFraction": 0.292,
+							"padYFraction": 0.074,
+							"widthFraction": 0.276335
 						}
 					]
 				}
@@ -473,19 +531,11 @@
 							"color": { "r": "0.16990209", "g": "0.22204861", "b": "0.3503291", "a": "1" }
 						},
 						{
-							"assetSpec": "comic:item_towerOpen.png",
-							"role": null,
-							"focus": "foot",
-							"anchor": { "x": 0.283, "y": 0.633 },
-							"size": 0.0461,
-							"nameTag": "none"
-						},
-						{
 							"assetSpec": "comic:light_starburstLarge.png",
 							"role": null,
 							"focus": "foot",
-							"anchor": { "x": 0.294, "y": 0.67 },
-							"size": 0.0354,
+							"anchor": { "x": 0.261, "y": 0.78 },
+							"size": 0.0125,
 							"drawDepth": 4.5,
 							"nameTag": "none"
 						},
@@ -531,8 +581,16 @@
 "implications": {
 	"generatedTargets": [
 		{
+			"npcId": "guidingStar_wanderer",
 			"createEntity": {
 				"query": { "baseTag": "human", "setAge": "lateMiddleAge" },
+				"control": "none"
+			}
+		},
+		{
+			"role": "npc3",
+			"createEntity": {
+				"query": { "baseTag": "human", "setAge": "earlyMiddleAge", "looksSimilarTo": "npc" },
 				"control": "none"
 			}
 		}
