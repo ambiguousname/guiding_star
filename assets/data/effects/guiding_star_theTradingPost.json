@@ -301,8 +301,7 @@
 							"role": "npc3",
 							"facing": "left",
 							"equipment": { "mode": "removeWeapons" },
-							"focus": "foot",
-							"anchor": { "x": 0.594, "y": -0.764 },
+							"anchor": { "x": 0.58, "y": 0.307 },
 							"size": 0.6576,
 							"head": { "rotate": 35.548 }
 						}
@@ -312,9 +311,8 @@
 							"textSourceFile": "guiding_star_theTradingPost",
 							"textKey": "~01~prompt~panel_006~1_darken",
 							"style": "darken",
-							"padXFraction": 0.061,
-							"padYFraction": 0.152,
-							"widthFraction": 0.8009263
+							"location": "topRight",
+							"widthFraction": 0.6322737
 						}
 					]
 				}
@@ -535,7 +533,7 @@
 							"role": null,
 							"focus": "foot",
 							"anchor": { "x": 0.261, "y": 0.78 },
-							"size": 0.0125,
+							"size": 0.0231,
 							"drawDepth": 4.5,
 							"nameTag": "none"
 						},
@@ -557,6 +555,14 @@
 							"anchor": { "x": 0.531, "y": 0.173 },
 							"size": 1.1896,
 							"drawDepth": 0,
+							"nameTag": "none"
+						},
+						{
+							"assetSpec": "comic:starsLong.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.474, "y": 0.711 },
+							"size": 0.3837,
 							"nameTag": "none"
 						}
 					],
