@@ -1,0 +1,541 @@
+{
+"id": "guiding_star_theTradingPost",
+"info": {
+	"dataVersion": 1,
+	"sourceFile": "guiding_star_theTradingPost",
+	"modId": "guiding_star",
+	"author": "ambiguousname"
+},
+"type": "ENCOUNTER_WILDERNESS_SCOUTING",
+"verb": "MANEUVER",
+"ability": {
+	"icon": "melee",
+	"priority": "1",
+	"cooldown": "oncePerGame",
+	"encounterEnabled": true
+},
+"targets": [
+	{ "template": "EVENT" },
+	{ "template": "COMPANY" },
+	{
+		"template": "INJECTED_TILE",
+		"fromRoles": [],
+		"atOffsets": [],
+		"aspects": [ "tileBordersOceans" ],
+		"overlandTileBiomes": []
+	},
+	{ "template": "INJECTED_PARTY" },
+	{ "template": "IMMEDIATE_ENEMY" },
+	{
+		"role": "hero",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": null,
+		"notAlreadyMatchedAs": []
+	},
+	{
+		"role": "hero2",
+		"template": "PICK_BY_SCORE",
+		"type": "HERO",
+		"scoreFunction": "max(BOOKISH,POET)",
+		"scoreThreshold": "80",
+		"notAlreadyMatchedAs": [ "hero" ]
+	},
+	{
+		"template": "CHOICE",
+		"promptScript": [
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"bg": "comicBG_hillPath.jpg",
+					"actorSlots": [
+						{
+							"assetSpec": "comic:item_towerOpen.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.402, "y": 1.151 },
+							"size": 0.1264,
+							"nameTag": "none",
+							"color": { "r": "1", "g": "1", "b": "1", "a": "1" }
+						},
+						{
+							"role": "hero",
+							"form": "frame-skeptical",
+							"equipment": {},
+							"anchor": { "x": 0.15, "y": 0.39 },
+							"size": 0.5209,
+							"drawDepth": 0,
+							"head": { "rotate": 30.707, "scaleY": 1 },
+							"foot": { "rotate": 0 }
+						},
+						{
+							"role": "hero2",
+							"equipment": {},
+							"anchor": { "x": 0.949, "y": 0.289 },
+							"size": 0.4571,
+							"nameTag": "bottomRight",
+							"head": { "rotate": -6.143 },
+							"foot": { "rotate": 6.987 }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_001~1_narration",
+							"style": "narration"
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_001~2_hero",
+							"pointerOwner": "hero",
+							"padXFraction": 0.244,
+							"padYFraction": 0.392,
+							"shrinkToFitText": true,
+							"pointerAdjust": { "rotate": -9.727578, "dX": 11.310345, "dY": -1.8850576 }
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"bg": "comicBG_abstractGloom.jpg",
+					"actorSlots": [
+						{
+							"assetSpec": "comic:item_towerOpen.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.493, "y": -0.246 },
+							"size": 0.2536,
+							"nameTag": "none"
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_002~1_speech",
+							"fallbackSlotOwner": 0,
+							"format": "",
+							"location": "bottomLeft",
+							"padXFraction": 0.144,
+							"padYFraction": 0.21,
+							"shrinkToFitText": true,
+							"pointerAdjust": {
+								"rotate": -144.87593,
+								"dX": -217.72414,
+								"dY": -65.977036,
+								"scaleX": 1.0061369,
+								"scaleY": 1.0061369,
+								"pointerOrientH": "onLeft"
+							}
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"bg": "comicBG_abstractGloom.jpg",
+					"actorSlots": [
+						{
+							"role": "hero",
+							"form": "frame-interested",
+							"equipment": {},
+							"anchor": { "x": 0.206, "y": 0.494 },
+							"size": 0.4696,
+							"head": { "rotate": 22.894 }
+						},
+						{
+							"role": "hero2",
+							"form": "frame-talk",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.602, "y": 0.471 },
+							"size": 0.3918,
+							"nameTag": "bottomRight"
+						},
+						{
+							"assetSpec": "comic:item_towerOpen.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.493, "y": 0.782 },
+							"size": 0.2536,
+							"nameTag": "none"
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_003~1_hero",
+							"pointerOwner": "hero",
+							"padXFraction": 0.117,
+							"padYFraction": 0.083,
+							"widthFraction": 0.2801284,
+							"shrinkToFitText": true,
+							"pointerAdjust": {
+								"rotate": -22.716963,
+								"dX": 36.75862,
+								"dY": -0.9425292,
+								"pointerOrientH": "onLeft"
+							}
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_003~2_hero2",
+							"pointerOwner": "hero2",
+							"location": "topRight",
+							"padXFraction": 0.442,
+							"padYFraction": 0.299,
+							"widthFraction": 0.28829882,
+							"shrinkToFitText": true
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "half",
+					"bg": "comicBG_interiorNoWindow.jpg",
+					"actorSlots": [
+						{
+							"role": "hero",
+							"equipment": {},
+							"anchor": { "x": 0.74, "y": 0.17 },
+							"size": 0.7219646,
+							"nameTag": "none"
+						},
+						{
+							"role": "hero2",
+							"form": "frame-talk",
+							"equipment": {},
+							"anchor": { "x": 0.273, "y": 0.343 },
+							"size": 0.6875991,
+							"nameTag": "none",
+							"head": { "rotate": 0 }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_004~1_hero2",
+							"pointerOwner": "hero2",
+							"padXFraction": 0.096,
+							"padYFraction": 0.118,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_004~2_hero",
+							"pointerOwner": "hero",
+							"location": "topRight",
+							"padXFraction": 0.028,
+							"padYFraction": 0.429,
+							"widthFraction": 0.48238805,
+							"shrinkToFitText": true
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "half",
+					"bg": "comicBG_interiorHearthOff.jpg",
+					"actorSlots": [
+						{
+							"role": "hero",
+							"form": "frame-skeptical",
+							"equipment": {},
+							"anchor": { "x": 0.134, "y": 0.475 },
+							"size": 0.66434294,
+							"nameTag": "none",
+							"foot": { "rotate": -9.596 }
+						},
+						{
+							"role": "hero2",
+							"form": "frame-talk",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.997, "y": 0.306 },
+							"size": 0.63272023,
+							"nameTag": "none",
+							"head": { "rotate": 25.911, "scaleY": 1 },
+							"foot": { "rotate": -20.578 }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_005~1_hero",
+							"pointerOwner": "hero",
+							"padXFraction": 0.185,
+							"padYFraction": 0.167,
+							"shrinkToFitText": true,
+							"pointerAdjust": { "rotate": 15.945395, "dX": -33.931038, "dY": 4.7126436 }
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_005~2_hero2",
+							"pointerOwner": "hero2",
+							"location": "topRight",
+							"padYFraction": 0.41,
+							"widthFraction": 0.5898507,
+							"shrinkToFitText": true
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_005~3_hero",
+							"pointerOwner": "hero",
+							"location": "bottomLeft",
+							"padYFraction": 0.134,
+							"shrinkToFitText": true,
+							"pointerAdjust": { "dX": -35.816093, "dY": -7.5402308, "pointerOrientH": "onRight" }
+						}
+					]
+				}
+			}
+		],
+		"options": [
+			{
+				"id": "one",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"bg": "comicBG_interiorHearth.jpg",
+							"actorSlots": [
+								{
+									"role": "hero2",
+									"form": "frame-grim",
+									"facing": "left",
+									"equipment": {},
+									"anchor": { "x": 0.65, "y": 0.278 },
+									"head": { "rotate": 20.072 }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "guiding_star_theTradingPost",
+									"textKey": "~02~choice_one~panel_001~1_hero2",
+									"pointerOwner": "hero2"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "two",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "hero2",
+									"form": "frame-skeptical",
+									"facing": "left",
+									"equipment": {},
+									"anchor": { "x": 0.601, "y": 0.277 },
+									"head": { "rotate": 19.14 }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "guiding_star_theTradingPost",
+									"textKey": "~03~choice_two~panel_001~1_hero2",
+									"pointerOwner": "hero2"
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	}
+],
+"outcomes": [
+	{
+		"class": "IfPlayerChose",
+		"target": "hero2",
+		"ifPlayerChose": "one",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"actorSlots": [
+									{
+										"role": "hero2",
+										"equipment": {}
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "guiding_star_theTradingPost",
+										"textKey": "~04~player_chose_one~panel_001~1_hero2",
+										"pointerOwner": "hero2"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"target": "hero2",
+		"ifPlayerChose": "two",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"actorSlots": [
+									{
+										"role": "hero2",
+										"equipment": {}
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "guiding_star_theTradingPost",
+										"textKey": "~05~player_chose_two~panel_001~1_hero2",
+										"pointerOwner": "hero2"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"class": "Description",
+		"script": [
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "full",
+					"showNameTags": false,
+					"bg": "comicBG_abstractGloom.jpg",
+					"actorSlots": [
+						{
+							"assetSpec": "comic:stoneship.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.99, "y": -0.063 },
+							"nameTag": "none",
+							"foot": { "rotate": -14.281 },
+							"color": { "r": "0.04341943", "g": "0.05674576", "b": "0.08952855", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:waterSurface.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.458, "y": -0.158 },
+							"size": 0.5696,
+							"nameTag": "none",
+							"color": { "r": "0.11704367", "g": "0.15296684", "b": "0.24133784", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:comicForeground_flatHillRockBrown.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.108, "y": 0.191 },
+							"size": 0.4094,
+							"nameTag": "none",
+							"color": { "r": "0.16046309", "g": "0.20971259", "b": "0.3308664", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:comicForeground_landHillGrass.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.266, "y": 0.393 },
+							"size": 0.1629,
+							"nameTag": "none",
+							"color": { "r": "0.16990209", "g": "0.22204861", "b": "0.3503291", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:item_towerOpen.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.283, "y": 0.633 },
+							"size": 0.0461,
+							"nameTag": "none"
+						},
+						{
+							"assetSpec": "comic:light_starburstLarge.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.294, "y": 0.67 },
+							"size": 0.0354,
+							"drawDepth": 4.5,
+							"nameTag": "none"
+						},
+						{
+							"role": "npc",
+							"facing": "left",
+							"equipment": { "mode": "leaveEquipment" },
+							"anchor": { "x": 0.51, "y": 0.576 },
+							"size": 0.317,
+							"drawDepth": 1.5,
+							"head": { "rotate": 11.525 },
+							"foot": { "rotate": 14.626 },
+							"color": { "r": "0.04341943", "g": "0.05674576", "b": "0.08952855", "a": "1" }
+						},
+						{
+							"assetSpec": "comic:smokeFogLayer.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.531, "y": 0.173 },
+							"size": 1.1896,
+							"drawDepth": 0,
+							"nameTag": "none"
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~06~~panel_001~1_narration",
+							"style": "narration"
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~06~~panel_001~2_narration",
+							"style": "narration",
+							"location": "bottomRight"
+						}
+					]
+				}
+			}
+		]
+	}
+],
+"implications": {
+	"generatedTargets": [
+		{
+			"createEntity": {
+				"query": { "baseTag": "human", "setAge": "lateMiddleAge" },
+				"control": "none"
+			}
+		}
+	]
+}
+}
