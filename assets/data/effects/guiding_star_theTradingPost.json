@@ -293,17 +293,71 @@
 			{
 				"class": "comicNode_Panel",
 				"panel": {
+					"size": "twoThirds",
 					"showNameTags": false,
 					"bgAuto": "atSite",
 					"bgNighttime": true,
 					"actorSlots": [
 						{
-							"role": "npc3",
+							"assetSpec": "comic:treasureChestWood_openFull.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.959, "y": 0.17 },
+							"size": 0.0829,
+							"drawDepth": 3.25,
+							"nameTag": "none"
+						},
+						{
+							"assetSpec": "comic:treasureChestWood_openFull.png",
+							"role": null,
 							"facing": "left",
-							"equipment": { "mode": "removeWeapons" },
-							"anchor": { "x": 0.58, "y": 0.307 },
-							"size": 0.6576,
-							"head": { "rotate": 35.548 }
+							"focus": "foot",
+							"anchor": { "x": 0.864, "y": 0.109 },
+							"size": 0.0919,
+							"drawDepth": 3.5,
+							"nameTag": "none",
+							"foot": { "rotate": -9.053 }
+						},
+						{
+							"assetSpec": "comic:treasureChestWood_openFull.png",
+							"role": null,
+							"facing": "left",
+							"focus": "foot",
+							"anchor": { "x": 0.938, "y": 0.097 },
+							"size": 0.0843,
+							"nameTag": "none",
+							"foot": { "rotate": 4.111 }
+						},
+						{
+							"assetSpec": "comic:merchantCart.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 0.208, "y": 0.314 },
+							"size": 0.2179,
+							"nameTag": "none"
+						},
+						{
+							"role": "npc2",
+							"form": "frame-interested",
+							"equipment": {
+								"mode": "removeWeapons",
+								"equipItemsById": [ "fryingPan" ]
+							},
+							"focus": "foot",
+							"anchor": { "x": 0.424 },
+							"size": 0.1795,
+							"drawDepth": 3.75
+						},
+						{
+							"role": "npc3",
+							"form": "frame-talk",
+							"facing": "left",
+							"equipment": {
+								"mode": "removeWeapons",
+								"equipItemsById": [ "scrollBlank" ]
+							},
+							"anchor": { "x": 0.731, "y": 0.299 },
+							"size": 0.18
 						}
 					],
 					"textSlots": [
@@ -311,15 +365,102 @@
 							"textSourceFile": "guiding_star_theTradingPost",
 							"textKey": "~01~prompt~panel_006~1_darken",
 							"style": "darken",
+							"padXFraction": 0.044,
+							"padYFraction": 0.071,
+							"widthFraction": 0.6795043
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_006~2_darken",
+							"style": "darken",
 							"location": "topRight",
-							"widthFraction": 0.6322737
+							"padXFraction": 0.002,
+							"padYFraction": 0.373,
+							"widthFraction": 0.61894286
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_006~3_darken",
+							"style": "darken",
+							"location": "bottomLeft",
+							"padXFraction": 0.066,
+							"padYFraction": 0.045,
+							"widthFraction": 0.5254537
 						}
 					]
 				}
 			},
 			{
 				"class": "comicNode_Panel",
-				"panel": { "size": "twoThirds" }
+				"panel": {
+					"showNameTags": false,
+					"bgAuto": "atSite",
+					"bgNighttime": true,
+					"actorSlots": [
+						{
+							"role": "npc3",
+							"form": "frame-joy",
+							"facing": "left",
+							"equipment": { "mode": "removeWeapons" },
+							"anchor": { "x": 0.542, "y": 0.426 },
+							"size": 0.6576,
+							"head": { "rotate": -29.766, "scaleY": -1 }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_007~1_darken",
+							"style": "darken",
+							"location": "topRight"
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_007~2_darken",
+							"style": "darken",
+							"location": "bottomLeft",
+							"padXFraction": 0.008
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"size": "threeFifths",
+					"showNameTags": false,
+					"bgAuto": "atSite",
+					"actorSlots": [
+						{
+							"role": "npc4",
+							"form": "frame-angry",
+							"equipment": { "mode": "removeWeapons" },
+							"anchor": { "x": 0.103, "y": 0.421 },
+							"size": 0.4939,
+							"head": { "rotate": 18.856 },
+							"foot": { "rotate": -16.071 }
+						}
+					],
+					"textSlots": [
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_008~1_darken",
+							"style": "darken",
+							"padXFraction": 0.022,
+							"padYFraction": 0.029,
+							"widthFraction": 0.6816609
+						},
+						{
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_008~2_darken",
+							"style": "darken",
+							"location": "bottomRight",
+							"padXFraction": 0.034,
+							"padYFraction": 0.075,
+							"widthFraction": 0.41077608
+						}
+					]
+				}
 			},
 			{
 				"class": "comicNode_Panel",
@@ -346,7 +487,7 @@
 					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_008~1_hero",
+							"textKey": "~01~prompt~panel_009~1_hero",
 							"pointerOwner": "hero",
 							"padXFraction": 0.292,
 							"padYFraction": 0.074,
@@ -597,6 +738,26 @@
 			"role": "npc3",
 			"createEntity": {
 				"query": { "baseTag": "human", "setAge": "earlyMiddleAge", "looksSimilarTo": "npc" },
+				"control": "none"
+			}
+		},
+		{
+			"role": "npc2",
+			"createEntity": {
+				"query": { "baseTag": "human", "setAge": "middleAge" },
+				"control": "none"
+			}
+		},
+		{
+			"role": "npc4",
+			"createEntity": {
+				"query": { "baseTag": "human", "setAge": "oldAge" },
+				"control": "none"
+			}
+		},
+		{
+			"createEntity": {
+				"query": { "baseTag": "human", "looksSimilarTo": "npc" },
 				"control": "none"
 			}
 		}
