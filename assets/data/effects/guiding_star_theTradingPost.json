@@ -12,8 +12,7 @@
 	"icon": "melee",
 	"priority": "1",
 	"cooldown": "oncePerGame",
-	"encounterEnabled": true,
-	"musicOverride": ""
+	"encounterEnabled": true
 },
 "targets": [
 	{ "template": "EVENT" },
