@@ -412,14 +412,18 @@
 							"textSourceFile": "guiding_star_theTradingPost",
 							"textKey": "~01~prompt~panel_007~1_darken",
 							"style": "darken",
-							"location": "topRight"
+							"location": "topRight",
+							"padXFraction": 0.015,
+							"padYFraction": 0.049,
+							"widthFraction": 0.95600367
 						},
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
 							"textKey": "~01~prompt~panel_007~2_darken",
 							"style": "darken",
 							"location": "bottomLeft",
-							"padXFraction": 0.008
+							"padXFraction": 0.029,
+							"padYFraction": 0.045
 						}
 					]
 				}
