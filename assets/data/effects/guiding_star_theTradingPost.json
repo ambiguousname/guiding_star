@@ -12,7 +12,8 @@
 	"icon": "melee",
 	"priority": "1",
 	"cooldown": "oncePerGame",
-	"encounterEnabled": true
+	"encounterEnabled": true,
+	"musicOverride": ""
 },
 "targets": [
 	{ "template": "EVENT" },
@@ -487,33 +488,46 @@
 			{
 				"class": "comicNode_Panel",
 				"panel": {
-					"size": "twoThirds",
 					"showNameTags": false,
+					"mustStartRow": true,
+					"animation": { "overridePanelOrder": 3, "overridePanelDrawDepth": 2 },
 					"actorSlots": [
 						{
 							"role": "npc4",
 							"form": "frame-sad",
 							"equipment": { "mode": "removeWeapons" },
-							"anchor": { "x": 0.085, "y": 0.311 },
-							"size": 0.425,
+							"anchor": { "x": 0.181, "y": 0.361 },
+							"size": 0.47427535,
 							"head": { "rotate": -32.717 },
 							"foot": { "rotate": -3.956 }
-						},
+						}
+					],
+					"textSlots": [
 						{
-							"role": "npc3",
-							"form": "frame-rage",
-							"facing": "left",
-							"equipment": { "mode": "leaveEquipment" },
-							"anchor": { "x": 0.908, "y": 0.378 },
-							"size": 0.4279
-						},
+							"textSourceFile": "guiding_star_theTradingPost",
+							"textKey": "~01~prompt~panel_009~1_darken",
+							"style": "darken",
+							"location": "bottomLeft",
+							"padXFraction": 0.467,
+							"padYFraction": 0.305,
+							"allowDrawOverEdges": true
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"showNameTags": false,
+					"animation": { "overridePanelOrder": 2 },
+					"actorSlots": [
 						{
 							"role": "npc2",
 							"form": "frame-angry",
 							"facing": "left",
 							"equipment": { "mode": "leaveEquipment" },
-							"anchor": { "x": 0.641, "y": 0.349 },
-							"size": 0.3674,
+							"anchor": { "x": 0.553, "y": 0.412 },
+							"size": 0.40999708,
 							"drawDepth": 0,
 							"nameTag": "none"
 						},
@@ -522,36 +536,55 @@
 							"form": "frame-angry",
 							"facing": "left",
 							"equipment": { "mode": "leaveEquipment" },
-							"anchor": { "x": 0.782, "y": 0.359 },
-							"size": 0.3417,
+							"anchor": { "x": 0.926, "y": 0.428 },
+							"size": 0.38131738,
 							"nameTag": "none"
 						}
 					],
 					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_009~1_darken",
+							"textKey": "~01~prompt~panel_010~1_darken",
 							"style": "darken",
-							"padXFraction": 0.037,
-							"padYFraction": 0.075,
-							"widthFraction": 0.59982294
+							"padXFraction": 0.083,
+							"padYFraction": 0.262,
+							"widthFraction": 0.8225751
+						}
+					]
+				}
+			},
+			{
+				"class": "comicNode_Panel",
+				"panel": {
+					"showNameTags": false,
+					"animation": { "overridePanelOrder": 1 },
+					"actorSlots": [
+						{
+							"role": "npc3",
+							"form": "frame-rage",
+							"facing": "left",
+							"equipment": { "mode": "leaveEquipment" },
+							"anchor": { "x": 0.427, "y": 0.457 },
+							"size": 0.3627
 						},
 						{
-							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_009~2_darken",
-							"style": "darken",
-							"padXFraction": 0.189,
-							"padYFraction": 0.412,
-							"widthFraction": 0.5732625
-						},
+							"role": "npc6",
+							"form": "frame-angry",
+							"facing": "left",
+							"equipment": { "mode": "leaveEquipment" },
+							"anchor": { "x": -0.095, "y": 0.428 },
+							"size": 0.38131738,
+							"nameTag": "none"
+						}
+					],
+					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_009~3_darken",
+							"textKey": "~01~prompt~panel_011~1_darken",
 							"style": "darken",
-							"location": "bottomLeft",
-							"padXFraction": 0.158,
-							"padYFraction": 0.027,
-							"widthFraction": 0.48252326
+							"padXFraction": 0.147,
+							"padYFraction": 0.062,
+							"widthFraction": 0.8674673
 						}
 					]
 				}
@@ -591,7 +624,7 @@
 					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_010~1_darken",
+							"textKey": "~01~prompt~panel_012~1_darken",
 							"style": "darken",
 							"padXFraction": 0.251,
 							"padYFraction": 0.182,
@@ -633,7 +666,7 @@
 					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_011~1_darken",
+							"textKey": "~01~prompt~panel_013~1_darken",
 							"style": "darken",
 							"padXFraction": 0.079,
 							"padYFraction": 0.281
@@ -665,7 +698,7 @@
 					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_012~1_darken",
+							"textKey": "~01~prompt~panel_014~1_darken",
 							"style": "darken",
 							"padXFraction": 0.336,
 							"padYFraction": 0.712,
@@ -684,6 +717,7 @@
 					"actorSlots": [
 						{
 							"role": "hero",
+							"form": "frame-skeptical",
 							"equipment": {},
 							"anchor": { "x": 0.26736438, "y": 0.5 },
 							"size": 0.7269863
@@ -700,7 +734,7 @@
 					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~01~prompt~panel_013~1_hero",
+							"textKey": "~01~prompt~panel_015~1_hero",
 							"pointerOwner": "hero",
 							"padXFraction": 0.292,
 							"padYFraction": 0.074,
@@ -724,8 +758,8 @@
 									"form": "frame-grim",
 									"facing": "left",
 									"equipment": {},
-									"anchor": { "x": 0.65, "y": 0.278 },
-									"head": { "rotate": 20.072 }
+									"anchor": { "x": 0.612, "y": 0.407 },
+									"head": { "rotate": 1.357 }
 								}
 							],
 							"textSlots": [
@@ -748,17 +782,44 @@
 							"actorSlots": [
 								{
 									"role": "hero2",
-									"form": "frame-skeptical",
+									"form": "frame-sad",
 									"facing": "left",
 									"equipment": {},
-									"anchor": { "x": 0.601, "y": 0.277 },
-									"head": { "rotate": 19.14 }
+									"anchor": { "x": 0.57, "y": 0.446 },
+									"head": { "rotate": 6.978 }
 								}
 							],
 							"textSlots": [
 								{
 									"textSourceFile": "guiding_star_theTradingPost",
 									"textKey": "~03~choice_two~panel_001~1_hero2",
+									"pointerOwner": "hero2"
+								}
+							]
+						}
+					}
+				]
+			},
+			{
+				"id": "three",
+				"script": [
+					{
+						"class": "comicNode_Panel",
+						"panel": {
+							"actorSlots": [
+								{
+									"role": "hero2",
+									"form": "frame-skeptical",
+									"facing": "left",
+									"equipment": {},
+									"anchor": { "x": 0.538, "y": 0.473 },
+									"head": { "rotate": 3.775 }
+								}
+							],
+							"textSlots": [
+								{
+									"textSourceFile": "guiding_star_theTradingPost",
+									"textKey": "~04~choice_three~panel_001~1_hero2",
 									"pointerOwner": "hero2"
 								}
 							]
@@ -783,17 +844,32 @@
 						{
 							"class": "comicNode_Panel",
 							"panel": {
+								"size": "twoThirds",
 								"actorSlots": [
 									{
 										"role": "hero2",
-										"equipment": {}
+										"form": "frame-grim",
+										"equipment": {},
+										"anchor": { "x": 0.18, "y": 0.5 },
+										"size": 0.8961039
+									},
+									{
+										"role": "hero",
+										"facing": "left",
+										"equipment": {},
+										"anchor": { "x": 0.82, "y": 0.5 },
+										"size": 0.8961039,
+										"nameTag": "bottomRight"
 									}
 								],
 								"textSlots": [
 									{
 										"textSourceFile": "guiding_star_theTradingPost",
-										"textKey": "~04~player_chose_one~panel_001~1_hero2",
-										"pointerOwner": "hero2"
+										"textKey": "~05~player_chose_one~panel_001~1_hero2",
+										"pointerOwner": "hero2",
+										"padXFraction": 0.225,
+										"padYFraction": 0.051,
+										"shrinkToFitText": true
 									}
 								]
 							}
@@ -825,8 +901,35 @@
 								"textSlots": [
 									{
 										"textSourceFile": "guiding_star_theTradingPost",
-										"textKey": "~05~player_chose_two~panel_001~1_hero2",
+										"textKey": "~06~player_chose_two~panel_001~1_hero2",
 										"pointerOwner": "hero2"
+									}
+								]
+							}
+						}
+					]
+				}
+			]
+		}
+	},
+	{
+		"class": "IfPlayerChose",
+		"target": "hero2",
+		"ifPlayerChose": "three",
+		"then": {
+			"class": "DoAll",
+			"outcomes": [
+				{
+					"class": "Description",
+					"script": [
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"textSlots": [
+									{
+										"textSourceFile": "guiding_star_theTradingPost",
+										"textKey": "~07~player_chose_three~panel_001~1_hero",
+										"pointerOwner": "hero"
 									}
 								]
 							}
@@ -923,12 +1026,12 @@
 					"textSlots": [
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~06~~panel_001~1_narration",
+							"textKey": "~08~~panel_001~1_narration",
 							"style": "narration"
 						},
 						{
 							"textSourceFile": "guiding_star_theTradingPost",
-							"textKey": "~06~~panel_001~2_narration",
+							"textKey": "~08~~panel_001~2_narration",
 							"style": "narration",
 							"location": "bottomRight"
 						}
