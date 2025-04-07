@@ -439,6 +439,24 @@
 							"size": 0.4939,
 							"head": { "rotate": 18.856 },
 							"foot": { "rotate": -16.071 }
+						},
+						{
+							"role": "npc5",
+							"form": "frame-grim",
+							"facing": "left",
+							"equipment": {},
+							"anchor": { "x": 0.731, "y": 0.405 },
+							"size": 0.4549,
+							"head": { "rotate": 0, "scaleY": 1 }
+						},
+						{
+							"assetSpec": "comic:comicForeground_cageWoodClosed.png",
+							"role": null,
+							"focus": "foot",
+							"anchor": { "x": 1.055, "y": 0.352 },
+							"size": 0.2062,
+							"drawDepth": 1.5,
+							"nameTag": "none"
 						}
 					],
 					"textSlots": [
@@ -756,6 +774,7 @@
 			}
 		},
 		{
+			"role": "npc5",
 			"createEntity": {
 				"query": { "baseTag": "human", "looksSimilarTo": "npc" },
 				"control": "none"
