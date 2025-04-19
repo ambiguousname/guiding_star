@@ -869,6 +869,41 @@
 										"padXFraction": 0.225,
 										"padYFraction": 0.051,
 										"shrinkToFitText": true
+									},
+									{
+										"textSourceFile": "guiding_star_theTradingPost",
+										"textKey": "~05~player_chose_one~panel_001~2_hero",
+										"pointerOwner": "hero",
+										"location": "topRight",
+										"padXFraction": 0.28000003,
+										"shrinkToFitText": true
+									}
+								]
+							}
+						},
+						{
+							"class": "comicNode_Panel",
+							"panel": {
+								"bg": "comicBG_abstractGloom.jpg",
+								"actorSlots": [
+									{
+										"assetSpec": "comic:item_towerOpen.png",
+										"role": null,
+										"focus": "foot",
+										"anchor": { "x": 0.451, "y": 0.173 },
+										"size": 0.287,
+										"nameTag": "none"
+									}
+								],
+								"textSlots": [
+									{
+										"textSourceFile": "guiding_star_theTradingPost",
+										"textKey": "~05~player_chose_one~panel_002~1_speech",
+										"fallbackSlotOwner": 0,
+										"location": "topRight",
+										"padXFraction": 0.08,
+										"padYFraction": 0.243,
+										"shrinkToFitText": true
 									}
 								]
 							}
